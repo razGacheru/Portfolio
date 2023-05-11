@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(73, 73, 73);
+    color: beige;
+    margin: 10px;
+}
+
+header {
+    margin-bottom: -30px;
+}
+
+
+nav > ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+nav > ul > li {
+    margin-right: 50px;
+    margin-left: -40px;
+    font-size: 20px;
+}
+
+nav > ul > li:hover {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.profile {
+    font-size: 1.2em;
+    display: flex;
+    margin-top: 7%;
+}
+
+.introduction > h1 {
+    margin-top: -1px;
+}
+
+.introduction {
+    margin-left: 30px;
+}
+
+.introduction > p {
+}
+
+.languages {
+    display: flex;
+    list-style: none;
+}
+
+.languages > li {
+    margin-left: -38px;
+    margin-right: 45px;
+}
+
+.about  {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.projects  {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.project > img{
+    border: 1px solid;
+    width: 100px;
+}
+
+
