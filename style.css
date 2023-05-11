@@ -1,80 +1,202 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(73, 73, 73);
-    color: beige;
-    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    color:beige
+}
+
+body {
+    margin: auto;
+    max-width: 70%;
+    padding: 0;
+    font-size: 1.25em;
 }
 
 header {
-    margin-bottom: -30px;
+    position: fixed;
 }
 
 
 nav > ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    
+    text-align: center;
 }
 
 nav > ul > li {
-    margin-right: 50px;
-    margin-left: -40px;
-    font-size: 20px;
+    display: inline-block;
+    margin: 1% 5%;
+    background-color: transparent;
 }
 
-nav > ul > li:hover {
-    background-color: red;
-}
+#nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  #navLeft, #navRight {
+    width: 40%;
+  }
+
+  #navLeft {
+    left: 0;
+  }
+
+  #navRight {
+    right: 0;
+  }
+
+  #nav.hidden {
+    transform: translateY(-100%);
+  }
 
 a {
     text-decoration: none;
 }
 
-
+a:hover {
+    transition: .5s;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 1.25em;
+}
 
 .profile {
     font-size: 1.2em;
     display: flex;
-    margin-top: 7%;
-}
-
-.introduction > h1 {
-    margin-top: -1px;
+    margin-top: 15%;
 }
 
 .introduction {
-    margin-left: 30px;
+    margin-left: 6%;
+}
+
+.introduction > h2 {
+    color: aquamarine;
+    font-size: 2.5em;
+    margin-top: -20px;
+    margin-bottom: -17px;
 }
 
 .introduction > p {
+    line-height: 1.5;
 }
 
-.languages {
+.introduction > span {
+    font-size: .8em;
+    margin-top: 100px;
+}
+.profile > img {
+    width: 300px;
+    height: 55%;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+
+#languages {
+    color: rgb(253, 76, 44);
+}
+
+
+#projects > h1, #about > h1, #contacts > h1  {
+    margin-top: 10%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+
+}
+
+#about > p {
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+
+.project {
     display: flex;
-    list-style: none;
+    margin-left: -10%;
+    width: 120%;
+    justify-content: space-between;
+    
 }
 
-.languages > li {
-    margin-left: -38px;
-    margin-right: 45px;
+.project-one, .project-two, .project-three {
+    width: 30%;
 }
 
-.about  {
-    margin-top: 50px;
-    text-align: center;
-}
-
-
-.projects  {
-    margin-top: 50px;
-    text-align: center;
+.project-one > a > img, .project-two > img, .project-three > img {
+    width: 100%;
+    height: 80%;
 }
 
 
-.project > img{
-    border: 1px solid;
-    width: 100px;
+
+.project-one:hover, .project-two:hover, .project-three:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+#contacts {
+    display: block;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#name, #email, #subject, #message {
+    background-color: white;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#message {
+    height: 300px;
+}
+
+#submit {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10%;
+    font-weight: 600;
+    background-color: green;
+    cursor: pointer;
 }
 
 
+ @media screen and (max-width: 899px) {
+    .profile {
+        margin-top: 100px;
+    }
+
+    body {
+        text-align: center;
+    }
+    
+    .profile {
+        display: block;
+    }
+    .profile > img {
+        margin-top: 20px;
+        width: 300px;
+        height: 95%;
+    }
+}
+
+@media screen and (min-width: 900px) { 
+    body {
+        width: 40%;
+    }
+
+    .introduction {
+        margin-top: 2%;
+    }
+} 

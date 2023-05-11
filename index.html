@@ -9,43 +9,74 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav id="nav">
+            <ul id="navLeft">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <ul id="navRight">
+                <li><a href="#contacts">LinkedIn</a></li>
+                <li><a href="#contacts">Fb</a></li>
+                <li><a href="#contacts">Gh</a></li>
+                <li><a href="#contacts">Email</a></li>
             </ul>
         </nav>
     </header>
     <div class="profile">
-        <img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="Image" style="width: 300px;">
+        <img src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.15752-9/344573137_816803799290824_6646345805440390864_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=P9qLCojJR0QAX8aCDXm&_nc_ht=scontent.fsyd4-1.fna&oh=03_AdQVtUT6i9502Cy21txhy60YnvE8ZIaD-_RkqJJ1xkrOMA&oe=64843194" alt="Image"  id="profilePic">
         <div class="introduction">
-            <h1>Software Engineer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, reprehenderit aliquid eius ipsum molestias earum nemo, facilis dolores, itaque repellendus odit hic alias esse corrupti iusto libero iure minima. Reprehenderit atque, saepe dolor suscipit voluptate modi magnam totam provident ratione laborum sed distinctio dignissimos numquam. Nisi blanditiis rerum totam aliquam.</p>
-            <ul class="languages">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>C</li>
-                <li>Node.js</li>
-                <li>REACT</li>
-            </ul>
+            <pre>Hi there, I'm Roland, a</pre>
+            <h2>Software Engineer,</h2>
+            <pre>and I love bulding <strong>web stuffs.</strong></pre>
+            <p>Experienced software engineer skilled in <strong id="languages">HTML, CSS, Javascript, REACT, Node.js, Python, MongoDB, and C</strong>. Passionate about creating efficient, user-friendly code.</p>
+            
         </div>
     </div>
-    <div class="about">
+
+    <div id="about">
         <h1>About me</h1>
         <p>A second year Computer Science student studying at University of New South Whales, Sydney, Australia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vitae odit provident iure sapiente illum voluptate nulla eaque minima! Id qui beatae magnam dolor minus ipsam accusamus ullam quisquam reprehenderit itaque, libero odit vero rem consequuntur aut quia modi quas animi a iusto deserunt amet tempora! Sunt laboriosam et fuga?</p>
     </div>
-    <div class="projects">
+    
+    <div id="projects">
         <h1>Projects</h1>
-        <div class="project">
-            <img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="p1">
-            <span>This</span>
 
+        <div class="project">
+    
+            <div class="project-one">
+                <a target="blank" href="https://cdn.dreamtemplate.com/product/images/215/9834/20140625055007.jpg"><img src="https://cdn.dreamtemplate.com/product/images/215/9834/20140625055007.jpg" alt="p1"></a>
+                <span> Salon Website </span>
+            </div>
+            <div class="project-two">
+                <img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="p1">
+                <span> Library </span>
+            </div>
+            <div class="project-three">
+                <img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="p1">
+                <span> Salon Website </span>
+            </div>
         </div>
-        
     </div>
+
+
+    <div id="contacts">
+        <p></p>
+        <h1>Contact me</h1>
+            <span>Name:</span>
+            <input type="text" name="username" id="name"></input>
+            <br />
+            <span>Email: </span>
+            <input type="email" id="email" required></input>
+            <br />
+            <span>Subject:</span>
+            <input type="text" id="subject" required></input>
+            <br />
+            <span>Message:</span>
+            <textarea name="comment" id="message" placeholder="Enter message here"></textarea>
+            <button id="submit">Submit</button>
+    </div>
+
 
 
     <script src="./main.js"></script>
