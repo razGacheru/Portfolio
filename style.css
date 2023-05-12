@@ -35,6 +35,7 @@ nav > ul > li {
     width: 100%;
     transition: 0.3s ease-in-out;
     z-index: 1;
+    height: 5%;
   }
   
   #navLeft, #navRight {
@@ -75,7 +76,7 @@ i:hover {
 }
 
 .introduction {
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .introduction > h2 {
@@ -89,10 +90,6 @@ i:hover {
     line-height: 1.5;
 }
 
-.introduction > span {
-    font-size: .8em;
-    margin-top: 100px;
-}
 .profile > img {
     width: 300px;
     height: 55%;
@@ -159,7 +156,7 @@ i:hover {
 }
 
 #name, #email, #subject, #message {
-    background-color: white;
+    background-color: rgb(236, 227, 227);
     margin-bottom: 10px;
     height: 20px;
     width: 100%;
@@ -192,13 +189,10 @@ i:hover {
 }
 
 @media screen and (max-width: 745px) {
-    #nav.hidden {
-        transform: translateY(-120%);
-    }
-
     #navLeft {
         width: 50%;
         display: block;
+        width: 60%;
     }
 
     #navRight {
@@ -217,6 +211,8 @@ i:hover {
     * {
         text-align: center;
     }
+
+ 
 
     .profile > img {
         margin-top: 20px;
@@ -239,6 +235,10 @@ i:hover {
         margin-top: 100px;
     }
 
+    #name, #email, #subject, #message {
+        text-align: left;
+    }
+
 }
 
  @media screen and (min-width: 745px) and (max-width: 1200px) {
@@ -250,27 +250,27 @@ i:hover {
         text-align: left;
     }
 
-    .project {
-        width: 100%;
-        text-align: center;
-        margin: auto;
-    }
 
     
 }
 
-@media screen and (min-width: 1199px) { 
+@media screen and (min-width: 1200px) { 
     body {
-        max-width: 50%;
+        max-width: 40%;
     }
 
     .introduction {
-        margin-top: 2%;
+        margin: auto;
+        margin-left: 5%;
     }
 
-    .project {
-        width: 100%;
-        text-align: center;
-        margin: auto;
+    #navLeft {
+        margin-left: -25%;
     }
+
+    #navRight {
+        margin-right: -25%;
+    }
+
+
 } 
