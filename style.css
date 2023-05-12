@@ -151,12 +151,11 @@ i:hover {
 #contacts {
     display: block;
     margin-bottom: 100px;
-    margin-top: -100px;
     width: 100%;
 }
 
 #name, #email, #subject, #message {
-    background-color: rgb(236, 227, 227);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
     height: 20px;
     width: 100%;
@@ -188,6 +187,15 @@ i:hover {
     opacity: 1.5;
 }
 
+@media screen and (max-width: 600px) {
+    #nav {
+        height: 80px;
+    }
+
+    .profile {
+        margin-top: 20%;
+    }
+}
 @media screen and (max-width: 745px) {
     #navLeft {
         width: 50%;
@@ -231,15 +239,16 @@ i:hover {
         margin: auto;
     }
 
-    #contacts {
-        margin-top: 100px;
-    }
 
     #name, #email, #subject, #message {
         text-align: left;
     }
 
+    
+
 }
+
+
 
  @media screen and (min-width: 745px) and (max-width: 1200px) {
     .profile {
@@ -271,6 +280,4 @@ i:hover {
     #navRight {
         margin-right: -25%;
     }
-
-
 } 

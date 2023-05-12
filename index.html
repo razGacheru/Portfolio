@@ -12,7 +12,7 @@
     <header>
         <nav id="nav">
             <ul id="navLeft">
-                <li><a href="#about">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contact</a></li>
             </ul>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
     </header>
-    <div class="profile">
+    <div class="profile" id="home">
         <img src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.15752-9/344573137_816803799290824_6646345805440390864_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=P9qLCojJR0QAX8aCDXm&_nc_ht=scontent.fsyd4-1.fna&oh=03_AdQVtUT6i9502Cy21txhy60YnvE8ZIaD-_RkqJJ1xkrOMA&oe=64843194" alt="Image"  id="profilePic">
         <div class="introduction">
             <pre>Hi there, I'm Roland, a</pre>
@@ -64,23 +64,21 @@
     <div id="contacts">
         <p></p>
         <h1>Contact me</h1>
-        <div id="form">
+        <form id="form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdovjely" method="post">
             <span>Name:</span>
-            <input type="text" name="username" id="name"></input>
+            <input name="name" type="text" name="username" id="name"></input>
             <br />
             <span>Email: </span>
-            <input type="email" id="email" required></input>
+            <input name="_replyto" name="email" type="email" id="email" required></input>
             <br />
             <span>Subject:</span>
-            <input type="text" id="subject" required></input>
+            <input name="subject" type="text" id="subject" required></input>
             <br />
             <span>Message:</span>
             <textarea name="comment" id="message" placeholder="Enter message here"></textarea>
-            <button id="submit">Submit</button>
-        </div>
+            <button id="submit" value="Send">Submit</button>
+        </form>
     </div>
-
-
 
     <script src="./main.js"></script>
 </body>
