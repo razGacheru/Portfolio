@@ -117,8 +117,8 @@ a:hover {
 
 .project {
     display: flex;
-    margin-left: -10%;
-    width: 120%;
+    margin-left: -25%;
+    width: 150%;
     justify-content: space-between;
     
 }
@@ -132,6 +132,13 @@ a:hover {
     height: 80%;
 }
 
+.project-one > p, .project-two > p, .project-three > p {
+    border: 1px solid;
+    background-color: rgb(112, 21, 21);
+    margin-top: -5px;
+    text-align: center;
+    
+}
 
 
 .project-one:hover, .project-two:hover, .project-three:hover {
@@ -172,7 +179,7 @@ a:hover {
 }
 
 
- @media screen and (max-width: 899px) {
+ @media screen and (min-width: 451px) and (max-width: 900px) {
     .profile {
         margin-top: 100px;
     }
@@ -188,6 +195,15 @@ a:hover {
         margin-top: 20px;
         width: 300px;
         height: 95%;
+    }
+
+    .project {
+        display: block;
+        text-align: center;
+    }
+    .project-one, .project-two, .project-three {
+        width: 70%;
+        margin: auto;
     }
 }
 
