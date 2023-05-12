@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    font-family: 'Wix Madefor Text', sans-serif;
 }
 
 body {
@@ -150,33 +151,40 @@ i:hover {
 
 #contacts {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 100%;
+    margin-top: -12%;
 }
 
 #name, #email, #subject, #message {
     background-color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    height: 20px;
     width: 100%;
     height: 50px;
     color: black;
     font-size: 20px;
+    display: block;
     border-radius: 5px;
+    margin: auto;
+}
+
+ #form {
+    width: 50%;
+    margin: auto;
 }
 
 #message {
     height: 300px;
+    width: 100%;
 }
 
 #submit {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(241, 241, 241);
     padding: 10px 15px;
-    border-radius: 10%;
     font-weight: 600;
     background-color: green;
     cursor: pointer;
+    width: 100%;
 }
 
 #submit:hover {
@@ -185,6 +193,24 @@ i:hover {
 
 #submit:active {
     opacity: 1.5;
+}
+
+footer > ul {
+    list-style: none;;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-top: 100px;
+    padding: 0;
+    margin-left: 19%;
+}
+
+footer > span {
+    display: block;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -196,6 +222,7 @@ i:hover {
         margin-top: 20%;
     }
 }
+
 @media screen and (max-width: 745px) {
     #navLeft {
         width: 50%;
@@ -220,7 +247,6 @@ i:hover {
         text-align: center;
     }
 
- 
 
     .profile > img {
         margin-top: 20px;
@@ -243,9 +269,6 @@ i:hover {
     #name, #email, #subject, #message {
         text-align: left;
     }
-
-    
-
 }
 
 
@@ -257,10 +280,7 @@ i:hover {
 
     body {
         text-align: left;
-    }
-
-
-    
+    }  
 }
 
 @media screen and (min-width: 1200px) { 
