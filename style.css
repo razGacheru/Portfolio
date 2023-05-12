@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
-    color:beige
+    color:rgb(255, 255, 255)
 }
 
 body {
@@ -57,21 +57,25 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    transition: .5s;
+i:hover, a:hover {
+    transition: .2s;
     text-decoration: underline;
     text-decoration-color: red;
     font-size: 1.25em;
 }
 
+i:hover {
+    transition: .05s;
+}
+
 .profile {
     font-size: 1.2em;
     display: flex;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .introduction {
-    margin-left: 6%;
+    margin-left: 20px;
 }
 
 .introduction > h2 {
@@ -102,9 +106,9 @@ a:hover {
 
 
 #projects > h1, #about > h1, #contacts > h1  {
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: aqua;
     font-size: 2.5em;
 
 }
@@ -117,8 +121,8 @@ a:hover {
 
 .project {
     display: flex;
-    margin-left: -25%;
-    width: 150%;
+    margin-top: 5%;
+    margin: auto;
     justify-content: space-between;
     
 }
@@ -129,7 +133,7 @@ a:hover {
 
 .project-one > a > img, .project-two > img, .project-three > img {
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 
 .project-one > p, .project-two > p, .project-three > p {
@@ -150,6 +154,7 @@ a:hover {
 #contacts {
     display: block;
     margin-bottom: 100px;
+    margin-top: -100px;
     width: 100%;
 }
 
@@ -178,19 +183,41 @@ a:hover {
     cursor: pointer;
 }
 
+#submit:hover {
+    opacity: 0.9;
+}
 
- @media screen and (min-width: 451px) and (max-width: 900px) {
-    .profile {
-        margin-top: 100px;
+#submit:active {
+    opacity: 1.5;
+}
+
+@media screen and (max-width: 745px) {
+    #nav.hidden {
+        transform: translateY(-120%);
     }
 
-    body {
-        text-align: center;
+    #navLeft {
+        width: 50%;
+        display: block;
     }
-    
+
+    #navRight {
+        margin-right: 15px;
+        width: 50%;
+    }
+        
     .profile {
         display: block;
     }
+
+    .introduction {
+        margin: auto;
+    }
+
+    * {
+        text-align: center;
+    }
+
     .profile > img {
         margin-top: 20px;
         width: 300px;
@@ -200,19 +227,50 @@ a:hover {
     .project {
         display: block;
         text-align: center;
-    }
-    .project-one, .project-two, .project-three {
-        width: 70%;
+        max-width: 100%;
         margin: auto;
     }
+    .project-one, .project-two, .project-three {
+        width: 80%;
+        margin: auto;
+    }
+
+    #contacts {
+        margin-top: 100px;
+    }
+
 }
 
-@media screen and (min-width: 900px) { 
+ @media screen and (min-width: 745px) and (max-width: 1200px) {
+    .profile {
+        margin-top: 100px;
+    }
+
     body {
-        width: 40%;
+        text-align: left;
+    }
+
+    .project {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (min-width: 1199px) { 
+    body {
+        max-width: 50%;
     }
 
     .introduction {
         margin-top: 2%;
+    }
+
+    .project {
+        width: 100%;
+        text-align: center;
+        margin: auto;
     }
 } 
