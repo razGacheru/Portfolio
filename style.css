@@ -113,7 +113,6 @@ a:hover, i:hover {
     margin: auto;
     gap: 20px;
     max-width: 700px;
-    border: 1px solid;
 }
 
 .project-one, .project-two, .project-three {
@@ -158,6 +157,7 @@ a:hover, i:hover {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    max-width: 500px;
 }
 
 #form > * {
@@ -222,6 +222,7 @@ footer > ul {
     font-size: 1.25rem;
     width: 20%;
     margin-top: 10px;
+    min-width: 200px;
 }
 
 footer > small {
@@ -248,16 +249,21 @@ height: 1px;
         text-align: center;
     }
 
+    #navLeft {
+        display: none;
+    }
+
+
+    #navRight {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
     #profilePic {
         width: 200px;
         height: 200px;
         margin-bottom: 20px;
     }
-
-
-
-  
-
 }
 
  @media screen and (min-width: 745px) and (max-width: 1200px) {
@@ -266,16 +272,7 @@ height: 1px;
     }
 
     .project {
-        border: 1px solid;
         width: 150%;
-    }
-
-    
-}
-
-@media screen and (min-width: 745px) {
-    #form {
-        max-width: 500px;
     }
 }
 
