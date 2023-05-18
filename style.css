@@ -111,12 +111,13 @@ a:hover, i:hover {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: center;
-    gap: 25px;
+    gap: 20px;
+    width: 150%;
+    max-width: 700px;
 }
 
 .project-one, .project-two, .project-three {
-    width: 235px;
+    width: 215px;
 }
 
 .project-one > a > img, .project-two > img, .project-three > img {
@@ -256,6 +257,8 @@ height: 1px;
     #form {
         min-width: 250px;
     }
+
+    
 
 }
 
