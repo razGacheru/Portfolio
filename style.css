@@ -1,14 +1,10 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Text', sans-serif;
     background-color: rgb(32, 33, 36);
     color:rgb(204, 203, 203);
-    font-family: 'Wix Madefor Text', sans-serif;
-}
-
-body {
-    border: 1px solid transparent;
 }
 
 nav > ul > li {
@@ -27,6 +23,7 @@ nav > ul > li {
     border: 1px solid rgb(179, 164, 164);
     position: fixed;
     z-index: 2;
+    top: 0;
   }
   
   #navLeft, #navRight {
@@ -35,8 +32,6 @@ nav > ul > li {
     width: 400px;
     justify-content: center;
   }
-
-
 
 a {
     text-decoration: none;
@@ -48,7 +43,6 @@ a:hover, i:hover {
     text-decoration-color: red;
     font-size: 1.1rem;
 }
-
 
 .profile {
     margin: auto;
@@ -94,7 +88,6 @@ a:hover, i:hover {
 
 }
 
-
 #projects > h1, #about > h1, #contacts > h1  {
     position: relative;
     display: inline-block;
@@ -104,8 +97,6 @@ a:hover, i:hover {
     margin-bottom: 20px;
 
 }
-
-
 
 #about, #projects, #contacts {
     margin: auto;
@@ -268,23 +259,10 @@ height: 1px;
 
 }
 
-
-
  @media screen and (min-width: 745px) and (max-width: 1200px) {
-    .profile {
-        margin-top: 100px;
-    }
-
-    body {
-        text-align: left;
-    }  
-
     .profile {
         width: 500px;
     }
-
-    
-
 }
 
 @media screen and (min-width: 745px) {
