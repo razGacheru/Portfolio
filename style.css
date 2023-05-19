@@ -154,12 +154,12 @@
     width: 300px;
     height: 40px;
     color: black;
-    font-size: 20px;
+    font-size: 1rem;
     display: block;
     border-radius: 5px;
     margin: auto;
-    text-indent: 0.2rem;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    font-family: 'Arial', Times, serif;
   }
   
   #form {
